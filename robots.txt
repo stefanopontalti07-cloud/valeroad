@@ -1,0 +1,3 @@
+# Anteprima, non il sito vero: non va indicizzata.
+User-agent: *
+Disallow: /

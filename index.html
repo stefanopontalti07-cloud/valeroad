@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soccorso stradale a Rovereto 24h | Valeroad carro attrezzi</title>
+<meta name="description" content="Carro attrezzi 24 ore su 24 a Rovereto e in Vallagarina: traino, incidenti, batteria, foratura, recupero. Chiama il 388 955 0746, risponde Marcello.">
+<link rel="canonical" href="https://www.valeroad.it/">
+<meta name="theme-color" content="#14181B">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Valeroad">
+<meta property="og:title" content="Soccorso stradale Rovereto e Vallagarina, 24 ore su 24">
+<meta property="og:description" content="Carro attrezzi da Villa Lagarina, in mezzo alla valle. Traino, incidenti, batteria, foratura. Chiama il 388 955 0746.">
+<meta property="og:url" content="https://www.valeroad.it/">
+<meta property="og:image" content="https://www.valeroad.it/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Valeroad, soccorso stradale a Rovereto e in Vallagarina 24 ore su 24. Telefono 388 955 0746.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/font/big-shoulders-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/font/saira-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* Font ospitati qui, non su Google: una richiesta esterna in meno e niente CSS che blocca
+   il primo disegno della pagina. Sono i file variabili, sottoinsieme latino. */
+@font-face{font-family:'Big Shoulders';src:url(assets/font/big-shoulders-latin.woff2) format('woff2');
+  font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:'Saira';src:url(assets/font/saira-latin.woff2) format('woff2');
+  font-weight:400 700;font-style:normal;font-display:swap}
+:root{
+  --asfalto:#14181B; --asfalto-2:#1C2226; --asfalto-3:#262D32;
+  --ink:#EEF1F2; --ink-soft:#A6B0B5;
+  --ambra:#FFA51F; --ambra-scura:#E08900;
+  --display:'Big Shoulders','Arial Narrow',system-ui,sans-serif;
+  --testo:'Saira',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --e-expo:cubic-bezier(.16,1,.3,1); --e-quart:cubic-bezier(.25,1,.5,1);
+  --sez:clamp(72px,9vw,128px);
+  --z-sticky:20; --z-header:30;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--asfalto);color:var(--ink);
+  font-family:var(--testo);font-size:17px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:.95;
+  letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance;margin:0}
+p{margin:0 0 1em;max-width:68ch;text-wrap:pretty}
+a{color:inherit}
+img,svg{max-width:100%}
+:focus-visible{outline:3px solid var(--ambra);outline-offset:3px;border-radius:2px}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+@media(max-width:640px){.wrap{width:min(1120px,100% - 32px)}}
+.salta{position:absolute;left:-9999px;top:0}
+.salta:focus{left:8px;top:8px;z-index:100;background:var(--ambra);color:var(--asfalto);
+  padding:10px 16px;font-weight:600}
+
+/* ---------- bottoni ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:54px;padding:0 26px;border-radius:3px;border:1px solid transparent;
+  font-family:var(--testo);font-size:17px;font-weight:600;text-decoration:none;
+  cursor:pointer;transition:background-color .18s var(--e-quart),color .18s var(--e-quart),
+  border-color .18s var(--e-quart),transform .12s var(--e-quart)}
+.btn:active{transform:scale(.98)}
+.btn-primo{background:var(--ambra);color:var(--asfalto)}
+.btn-primo:hover{background:var(--ambra-scura)}
+.btn-secondo{background:transparent;color:var(--ink);border-color:#3A444A}
+.btn-secondo:hover{border-color:var(--ambra);color:var(--ambra)}
+.btn svg{flex:none}
+
+/* ---------- header ---------- */
+.testata{position:sticky;top:0;z-index:var(--z-header);background:var(--asfalto);
+  border-bottom:1px solid var(--asfalto-3)}
+.testata .wrap{display:flex;align-items:center;gap:20px;min-height:68px}
+.marchio{text-decoration:none;display:flex;align-items:baseline;gap:11px;line-height:1}
+.marchio .nome{font-family:var(--display);font-weight:800;font-size:30px;letter-spacing:.005em;
+  text-transform:uppercase;white-space:nowrap}
+.marchio i{font-style:normal;color:var(--ambra)}
+.marchio .tag{font-family:var(--testo);font-size:12px;font-weight:500;letter-spacing:.02em;
+  color:var(--ink-soft);white-space:nowrap}
+.testata-fine{margin-left:auto;display:flex;align-items:center;gap:22px}
+.tel-testo{font-weight:600;font-size:19px;letter-spacing:.01em;text-decoration:none;
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.tel-testo:hover{color:var(--ambra)}
+/* il numero scritto come testo resta un bersaglio comodo da toccare, senza diventare un bottone */
+a[href^="tel:"]:not(.btn){padding-block:.8em}
+@media(max-width:860px){.marchio .tag,.testata .tel-testo{display:none}}
+@media(max-width:520px){.testata .btn{min-height:44px;padding:0 16px;font-size:15px}}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(48px,7vw,92px) 0 var(--sez);position:relative;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-160px 0 auto -140px;height:620px;z-index:-1;
+  background:radial-gradient(46% 52% at 22% 34%,rgba(255,165,31,.16),rgba(255,165,31,0) 68%);
+  animation:faro 1.1s var(--e-expo) backwards}
+@keyframes faro{from{opacity:0;transform:translate3d(-40px,-24px,0) scale(.92)}}
+.hero-griglia{display:grid;gap:clamp(36px,5vw,64px);grid-template-columns:7fr 5fr;align-items:start}
+@media(max-width:900px){.hero-griglia{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(2.7rem,8.4vw,5.3rem);font-weight:800;line-height:1;margin-bottom:24px;
+  animation:sale .85s var(--e-expo) backwards}
+.hero h1 em{font-style:normal;color:var(--ambra)}
+.hero-sotto{font-size:clamp(1.06rem,2.1vw,1.3rem);color:var(--ink-soft);max-width:44ch;
+  margin-bottom:32px;animation:sale .85s .09s var(--e-expo) backwards}
+.hero-sotto b{color:var(--ink);font-weight:600}
+@keyframes sale{from{opacity:0;transform:translate3d(0,14px,0)}}
+.azioni{display:flex;flex-wrap:wrap;gap:12px;animation:sale .85s .18s var(--e-expo) backwards}
+.azioni .btn{flex:1 1 auto;min-width:210px}
+.riga-tel{margin-top:14px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;
+  animation:sale .85s .26s var(--e-expo) backwards}
+.riga-tel .tel-testo{font-family:var(--display);font-weight:700;font-size:clamp(2rem,5.5vw,2.9rem);
+  letter-spacing:.005em;line-height:1;padding-block:.22em}
+.riga-tel small{color:var(--ink-soft);font-size:15px}
+.esito{margin-top:12px;min-height:0;font-size:15px;color:var(--ink-soft)}
+.esito:not(:empty)::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;
+  background:var(--ambra);margin-right:9px;vertical-align:middle}
+
+/* pannello dati */
+.pannello{border:1px solid var(--asfalto-3);background:var(--asfalto-2);border-radius:3px;
+  padding:6px 22px 8px;animation:sale .85s .34s var(--e-expo) backwards}
+.pannello dl{margin:0}
+.pannello div{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:baseline;
+  padding:17px 0;border-bottom:1px solid var(--asfalto-3)}
+.pannello div:last-child{border-bottom:0}
+.pannello dt{font-size:13px;letter-spacing:.04em;color:var(--ink-soft);text-transform:uppercase;
+  font-weight:600;white-space:nowrap}
+.pannello dd{margin:0;grid-column:2;font-weight:500;line-height:1.45}
+.pannello .acceso{color:var(--ambra);font-weight:600}
+.pannello .acceso::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;
+  background:var(--ambra);margin-right:9px;vertical-align:baseline}
+
+/* ---------- sezioni ---------- */
+section{padding:var(--sez) 0}
+section[id]{scroll-margin-top:76px}
+.bordata{border-top:1px solid var(--asfalto-3)}
+.scura{background:var(--asfalto-2)}
+.titolo{font-size:clamp(1.95rem,4.6vw,3.1rem);margin-bottom:18px}
+.introduzione{color:var(--ink-soft);font-size:1.06rem;max-width:62ch;margin-bottom:clamp(34px,4vw,54px)}
+
+/* interventi: lista, non griglia di card */
+.interventi{list-style:none;margin:0;padding:0;border-top:1px solid var(--asfalto-3)}
+.interventi li{border-bottom:1px solid var(--asfalto-3);padding:26px 0;
+  display:grid;grid-template-columns:minmax(210px,.34fr) 1fr;gap:6px 40px;align-items:baseline}
+@media(max-width:720px){.interventi li{grid-template-columns:1fr;gap:6px;padding:22px 0}}
+.interventi h3{font-size:clamp(1.35rem,2.6vw,1.7rem);font-weight:700}
+.interventi p{margin:0;color:var(--ink-soft)}
+.interventi li:hover h3{color:var(--ambra)}
+.interventi h3{transition:color .18s var(--e-quart)}
+
+/* sezione ambra */
+.ambra{background:var(--ambra);color:var(--asfalto)}
+.ambra .titolo{color:var(--asfalto)}
+.ambra .introduzione{color:#4A3407;max-width:60ch}
+.passi{list-style:none;margin:0;padding:0;display:grid;gap:clamp(28px,4vw,52px);
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.passi li{border-top:2px solid rgba(20,24,27,.8);padding:20px 0 0}
+.passi b{display:block;font-family:var(--display);font-size:1.6rem;font-weight:700;
+  text-transform:uppercase;line-height:1;margin-bottom:12px}
+.passi .num{font-family:var(--testo);font-size:13px;font-weight:700;color:#5A3F08;
+  display:block;margin-bottom:14px;font-variant-numeric:tabular-nums}
+.passi p{margin:0;color:#3A2905}
+.ambra .btn-primo{background:var(--asfalto);color:var(--ambra)}
+.ambra .btn-primo:hover{background:#000}
+.ambra-fine{margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px}
+.ambra-fine .nota{color:#4A3407;font-size:15px;max-width:46ch}
+
+/* zona + mappa */
+.zona-griglia{display:grid;grid-template-columns:1fr minmax(270px,360px);gap:clamp(36px,6vw,72px);align-items:start}
+@media(max-width:900px){.zona-griglia{grid-template-columns:1fr}}
+.mappa{border:1px solid var(--asfalto-3);border-radius:3px;background:var(--asfalto-2);padding:20px 16px 18px}
+.mappa svg{display:block;width:100%;max-width:330px;height:auto;margin-inline:auto}
+.m-ss12{fill:none;stroke:#4B575E;stroke-width:2.4;stroke-linecap:round}
+.m-a22{fill:none;stroke:#333D43;stroke-width:5;stroke-linecap:round}
+.m-stop circle{fill:#7C878D}
+.m-stop text{fill:var(--ink);font-family:var(--testo);font-size:15px;font-weight:500}
+.m-stop.is-base circle{fill:var(--ambra)}
+.m-stop.is-base .m-halo{fill:none;stroke:var(--ambra);stroke-width:1.4;opacity:.45}
+.m-stop.is-base text{fill:var(--ambra);font-weight:700;font-size:16px}
+.m-note{fill:var(--ink-soft)!important;font-size:11.5px!important;font-weight:500!important}
+.m-exit rect{fill:none;stroke:#7C878D;stroke-width:1.4}
+.m-exit text{fill:var(--ink-soft);font-family:var(--testo);font-size:11.5px;font-weight:500}
+.m-way,.m-line{fill:#7C878D;font-family:var(--testo);font-size:11.5px;font-weight:600;
+  letter-spacing:.03em}
+.m-line{fill:#5D686E}
+.didascalia{margin:14px 2px 0;font-size:13.5px;color:var(--ink-soft);line-height:1.5}
+.comuni{list-style:none;margin:0 0 26px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.comuni li{border:1px solid var(--asfalto-3);border-radius:3px;padding:7px 13px;font-size:15px;
+  font-weight:500;color:var(--ink)}
+.fuori{color:var(--ink-soft);font-size:15px}
+
+/* costo */
+.costo-griglia{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,64px)}
+@media(max-width:820px){.costo-griglia{grid-template-columns:1fr}}
+.riquadro{border:1px solid var(--asfalto-3);border-radius:3px;padding:clamp(24px,3vw,34px)}
+.riquadro h3{font-size:1.5rem;margin-bottom:12px}
+.riquadro p:last-child{margin-bottom:0}
+.riquadro .btn{margin-top:20px}
+.riquadro p{color:var(--ink-soft)}
+
+/* chi */
+.chi-griglia{display:grid;grid-template-columns:6fr 6fr;gap:clamp(30px,5vw,64px);align-items:start}
+@media(max-width:820px){.chi-griglia{grid-template-columns:1fr}}
+.chi p{font-size:1.12rem}
+
+/* faq */
+.domande-griglia{display:grid;grid-template-columns:1fr minmax(230px,300px);
+  gap:clamp(34px,5vw,68px);align-items:start}
+@media(max-width:900px){.domande-griglia{grid-template-columns:1fr}}
+.faq{border-top:1px solid var(--asfalto-3)}
+.faq details{border-bottom:1px solid var(--asfalto-3)}
+.faq summary{cursor:pointer;list-style:none;padding:22px 44px 22px 0;position:relative;
+  font-family:var(--display);font-size:clamp(1.25rem,2.4vw,1.55rem);font-weight:700;
+  text-transform:uppercase;line-height:1.1;transition:color .18s var(--e-quart)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--ambra)}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:13px;height:13px;
+  margin-top:-9px;border-right:2px solid var(--ambra);border-bottom:2px solid var(--ambra);
+  transform:rotate(45deg);transition:transform .25s var(--e-quart)}
+.faq details[open] summary::after{transform:rotate(-135deg);margin-top:-4px}
+.faq .risposta{padding:0 0 24px}
+.faq .risposta p{color:var(--ink-soft)}
+.faq .risposta p:last-child{margin-bottom:0}
+
+/* contatti */
+.contatti-griglia{display:grid;grid-template-columns:6fr 6fr;gap:clamp(30px,5vw,64px);align-items:start}
+@media(max-width:820px){.contatti-griglia{grid-template-columns:1fr}}
+.nap{font-style:normal;font-size:1.1rem;line-height:1.85}
+.nap .riga{display:block}
+.nap strong{font-weight:600}
+.nap a{text-decoration-color:#4B575E;text-underline-offset:4px}
+.nap a:hover{color:var(--ambra)}
+.contatti .azioni{margin-top:28px;animation:none}
+
+footer{border-top:1px solid var(--asfalto-3);padding:38px 0 calc(38px + var(--barra,0px));
+  color:var(--ink-soft);font-size:14.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;align-items:baseline}
+footer a{text-decoration:none}
+footer a:hover{color:var(--ambra)}
+
+/* barra fissa telefono (mobile) */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:var(--z-sticky);display:none;
+  gap:8px;padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+  background:rgba(20,24,27,.97);border-top:1px solid var(--asfalto-3)}
+.barra .btn{flex:1;min-height:50px;font-size:16px}
+@media(max-width:760px){
+  .barra{display:flex}
+  body{--barra:74px;padding-bottom:0}
+  footer{padding-bottom:calc(38px + 74px)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+
+<header class="testata">
+  <div class="wrap">
+    <a class="marchio" href="#contenuto"><span class="nome">Vale<i>road</i></span><span class="tag">soccorso stradale · Vallagarina</span></a>
+    <div class="testata-fine">
+      <a class="tel-testo" href="tel:+393889550746">388 955 0746</a>
+      <a class="btn btn-primo" href="tel:+393889550746">Chiama ora</a>
+    </div>
+  </div>
+</header>
+
+<main id="contenuto">
+
+  <section class="hero">
+    <div class="wrap hero-griglia">
+      <div>
+        <h1>Soccorso stradale a Rovereto e in Vallagarina, <em>24 ore su 24</em></h1>
+        <p class="hero-sotto">Sei fermo? Chiama: risponde <b>Marcello</b>, cioè chi guida il carro
+          attrezzi. Nessun centralino in mezzo. La base è a <b>Villa Lagarina</b>, in mezzo alla valle.</p>
+        <div class="azioni">
+          <a class="btn btn-primo" href="tel:+393889550746">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            Chiama ora
+          </a>
+          <button class="btn btn-secondo" id="posizione" type="button">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 6.5-9 12-9 12s-9-5.5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Mandami la posizione
+          </button>
+        </div>
+        <p class="esito" id="esito" role="status" aria-live="polite"></p>
+        <p class="riga-tel">
+          <a class="tel-testo" href="tel:+393889550746">388 955 0746</a>
+          <small>telefono e WhatsApp · notte, weekend e festivi compresi</small>
+        </p>
+      </div>
+
+      <div class="pannello">
+        <dl>
+          <div>
+            <dt>Adesso</dt>
+            <dd class="acceso">Attivo — il telefono è acceso</dd>
+          </div>
+          <div>
+            <dt>Base</dt>
+            <dd>Villa Lagarina, cinque minuti da Rovereto e a metà della Vallagarina</dd>
+          </div>
+          <div>
+            <dt>Preventivo</dt>
+            <dd>Te lo diciamo al telefono, prima di partire. Nessuna sorpresa all'arrivo</dd>
+          </div>
+          <div>
+            <dt>Il veicolo</dt>
+            <dd>Lo portiamo dove dici tu: la tua officina, la carrozzeria, casa</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="scura bordata" id="interventi">
+    <div class="wrap">
+      <h2 class="titolo">Cosa facciamo</h2>
+      <p class="introduzione">In ordine di quante volte capita davvero, non in ordine alfabetico.</p>
+      <ul class="interventi">
+        <li>
+          <h3>Traino e trasporto</h3>
+          <p>Il veicolo va dove decidi tu: la tua officina di fiducia, la carrozzeria, casa tua.
+             Non abbiamo un'officina da riempire, quindi non abbiamo motivo di portartelo altrove.</p>
+        </li>
+        <li>
+          <h3>Dopo un incidente</h3>
+          <p>Mettiamo in sicurezza il mezzo, lo carichiamo e liberiamo la carreggiata. Se ci sono
+             i vigili o i carabinieri, aspettiamo il via libera e ci occupiamo noi del resto.</p>
+        </li>
+        <li>
+          <h3>Batteria a terra</h3>
+          <p>Avviamento sul posto. Se l'auto riparte e regge, hai finito lì: niente traino,
+             niente carro attrezzi da pagare.</p>
+        </li>
+        <li>
+          <h3>Foratura</h3>
+          <p>Cambio della ruota dove sei fermo. Se il cerchio è rovinato o la scorta non c'è,
+             si carica e si porta dal gommista.</p>
+        </li>
+        <li>
+          <h3>Chiavi chiuse dentro</h3>
+          <p>Apertura della vettura senza rompere niente. Capita più spesso di quanto pensi,
+             soprattutto ai distributori e nei parcheggi.</p>
+        </li>
+        <li>
+          <h3>Recupero fuori strada</h3>
+          <p>Fosso, scarpata, ghiaia, neve, prato bagnato. Si recupera con il verricello e si
+             rimette in carreggiata.</p>
+        </li>
+        <li>
+          <h3>Moto e furgoni</h3>
+          <p>Trasporto di moto, scooter e veicoli commerciali leggeri. Quando chiami dicci
+             il modello: serve a sapere quale attrezzatura caricare.</p>
+        </li>
+        <li>
+          <h3>Elettriche e ibride</h3>
+          <p>Non si trainano sulle ruote: vanno caricate. Dicci il modello quando chiami e
+             arriviamo già attrezzati.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="ambra" id="come-funziona">
+    <div class="wrap">
+      <h2 class="titolo">Cosa succede quando chiami</h2>
+      <p class="introduzione">Tre passaggi, nessun modulo da compilare, nessuna attesa in linea.</p>
+      <ol class="passi">
+        <li>
+          <span class="num">1 di 3</span>
+          <b>Dici dove sei</b>
+          <p>Un incrocio, un cartello, il numero civico più vicino. Se non lo sai — di notte,
+             su una statale, capita a tutti — usa il pulsante qui sotto: il telefono legge la
+             posizione e la scrive lui su WhatsApp.</p>
+        </li>
+        <li>
+          <span class="num">2 di 3</span>
+          <b>Ti diciamo quanto e quando</b>
+          <p>Un tempo di arrivo vero e il prezzo, prima di muoverci. Preferiamo dirti venti
+             minuti e arrivare in venti, che dirtene cinque e farti aspettare al freddo.</p>
+        </li>
+        <li>
+          <span class="num">3 di 3</span>
+          <b>Arriviamo e carichiamo</b>
+          <p>Se si risolve sul posto, si risolve sul posto. Altrimenti carichiamo e portiamo
+             il veicolo dove hai detto tu.</p>
+        </li>
+      </ol>
+      <div class="ambra-fine">
+        <a class="btn btn-primo" href="tel:+393889550746">Chiama ora</a>
+        <p class="nota">Hai l'assistenza stradale nella polizza o la tessera ACI? Dillo subito
+          quando chiami: in molti casi l'intervento è già pagato e ti conviene attivarla.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bordata" id="zona">
+    <div class="wrap">
+      <h2 class="titolo">Dove arriviamo</h2>
+      <p class="introduzione">Un servizio stradale a Rovereto deve essere vicino a Rovereto.
+        La base è a Villa Lagarina, sulla destra Adige: da qui si scende verso Mori, Ala e Avio
+        o si sale verso Volano e Calliano senza attraversare il centro città.</p>
+      <div class="zona-griglia">
+        <div>
+          <ul class="comuni">
+            <li>Rovereto</li><li>Villa Lagarina</li><li>Isera</li><li>Nogaredo</li>
+            <li>Pomarolo</li><li>Nomi</li><li>Volano</li><li>Calliano</li>
+            <li>Besenello</li><li>Mori</li><li>Ala</li><li>Avio</li>
+            <li>Brentonico</li><li>Ronzo-Chienis</li><li>Trambileno</li>
+            <li>Vallarsa</li><li>Terragnolo</li>
+          </ul>
+          <p>Copriamo tutta la Vallagarina: il fondovalle sulla SS12 e le valli laterali —
+            Vallarsa, Terragnolo, Trambileno, la Val di Gresta, l'altopiano di Brentonico.
+            Saliamo anche verso Folgaria e scendiamo verso Nago-Torbole e l'alto Garda.</p>
+          <p class="fuori">Sei appena fuori da questo elenco? Chiama lo stesso: se possiamo
+            arrivare, arriviamo, e se non possiamo ti diciamo subito chi chiamare invece
+            di farti perdere tempo.</p>
+        </div>
+        <div class="mappa">
+          <svg viewBox="0 10 340 424" role="img" aria-labelledby="mappa-titolo mappa-desc">
+            <title id="mappa-titolo">Schema della Vallagarina servita da Valeroad</title>
+            <desc id="mappa-desc">Il fondovalle dell'Adige da nord a sud, dalla parte di Trento verso
+              Verona: Besenello, Calliano, Villa Lagarina — che è la base, in via Zandonai 105 —
+              Rovereto, Mori, Ala e Avio. Accanto corre l'autostrada A22 con i caselli di
+              Rovereto Nord, Rovereto Sud e Ala-Avio.</desc>
+            <g id="mappa-disegno">
+<path class="m-a22" d="M96.6,34.0 L98.6,51.0 L100.5,68.0 L102.2,85.0 L103.7,102.0 L104.9,119.0 L105.7,136.0 L106.0,153.0 L105.8,170.0 L105.2,187.0 L104.2,204.0 L102.8,221.0 L101.1,238.0 L99.2,255.0 L97.3,272.0 L95.4,289.0 L93.7,306.0 L92.2,323.0 L91.0,340.0 L90.3,357.0 L90.0,374.0 L90.2,391.0 L90.8,408.0"/>
+<path class="m-ss12" d="M126.6,34.0 L128.6,51.0 L130.5,68.0 L132.2,85.0 L133.7,102.0 L134.9,119.0 L135.7,136.0 L136.0,153.0 L135.8,170.0 L135.2,187.0 L134.2,204.0 L132.8,221.0 L131.1,238.0 L129.2,255.0 L127.3,272.0 L125.4,289.0 L123.7,306.0 L122.2,323.0 L121.0,340.0 L120.3,357.0 L120.0,374.0 L120.2,391.0 L120.8,408.0"/>
+<text class="m-way" x="140" y="26">verso Trento</text>
+<text class="m-way" x="134" y="424">verso Verona</text>
+<text class="m-line" x="89" y="38" text-anchor="end">A22</text>
+<text class="m-line" x="138" y="38">SS12</text>
+<g class="m-exit"><rect x="101.1" y="186.0" width="8" height="8" rx="1"/><text x="95.1" y="193.6" text-anchor="end">Rovereto Nord</text></g>
+<g class="m-exit"><rect x="95.8" y="246.0" width="8" height="8" rx="1"/><text x="89.8" y="253.6" text-anchor="end">Rovereto Sud</text></g>
+<g class="m-exit"><rect x="86.1" y="362.0" width="8" height="8" rx="1"/><text x="80.1" y="369.6" text-anchor="end">Ala-Avio</text></g>
+<g class="m-stop">
+  <circle cx="128.0" cy="46.0" r="3.6"/>
+  <text x="160" y="50.6">Besenello</text>
+</g>
+<g class="m-stop">
+  <circle cx="133.9" cy="104.0" r="3.6"/>
+  <text x="160" y="108.6">Calliano</text>
+</g>
+<g class="m-stop is-base">
+  <circle class="m-halo" cx="136.0" cy="162.0" r="10.5"/>
+  <circle cx="136.0" cy="162.0" r="6"/>
+  <text x="160" y="162.0">Villa Lagarina</text>
+  <text class="m-note" x="160" y="177.0">la base, in via Zandonai 105</text>
+</g>
+<g class="m-stop">
+  <circle cx="132.9" cy="220.0" r="3.6"/>
+  <text x="160" y="224.6">Rovereto</text>
+</g>
+<g class="m-stop">
+  <circle cx="126.6" cy="278.0" r="3.6"/>
+  <text x="160" y="282.6">Mori</text>
+</g>
+<g class="m-stop">
+  <circle cx="121.3" cy="336.0" r="3.6"/>
+  <text x="160" y="340.6">Ala</text>
+</g>
+<g class="m-stop">
+  <circle cx="120.3" cy="394.0" r="3.6"/>
+  <text x="160" y="398.6">Avio</text>
+</g>
+            </g>
+          </svg>
+          <p class="didascalia">Schema del fondovalle, non in scala: la linea sottile è la SS12, quella
+            spessa l'A22. Il punto arancione è la base. I quadratini sono i caselli — ma in
+            autostrada il soccorso lo attiva il gestore, vedi le domande frequenti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="scura bordata" id="costi">
+    <div class="wrap">
+      <h2 class="titolo">Quanto costa</h2>
+      <p class="introduzione">La risposta onesta è: dipende. Ma te la diamo prima di partire,
+        non quando siamo già lì.</p>
+      <div class="costo-griglia">
+        <div class="riquadro">
+          <h3>Da cosa dipende</h3>
+          <p>Da tre cose soltanto: da dove sei, da dove va portato il veicolo, e se è notte o
+            giorno festivo. Al telefono ci bastano trenta secondi per dirti la cifra.</p>
+          <p>Non troverai un prezzo civetta su questa pagina. Chi scrive «da 49 euro» in
+            grande, poi all'arrivo te ne chiede altri: preferiamo dirti la cifra vera subito.</p>
+        </div>
+        <div class="riquadro">
+          <h3>Se hai già l'assistenza</h3>
+          <p>Tessera ACI, polizza con soccorso incluso, assistenza della casa costruttrice:
+            se ce l'hai, spesso l'intervento è già pagato e conviene attivarla.</p>
+          <p>Se non sai se ce l'hai, o se ti hanno dato tempi lunghi, chiamaci lo stesso:
+            in due minuti capiamo insieme cosa ti conviene fare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bordata" id="chi">
+    <div class="wrap chi-griglia">
+      <div class="chi">
+        <h2 class="titolo">Chi risponde</h2>
+        <p>Valeroad è Marcello. Quando chiami parli con la persona che poi guida il mezzo:
+          non c'è un call center che smista la chiamata al primo carro attrezzi libero, e non
+          c'è un'app che gira la richiesta a qualcuno che non è di qui.</p>
+        <p>La sede è in via Zandonai 105 a Villa Lagarina, nella zona artigianale sulla destra
+          Adige. È un vantaggio pratico, non un dettaglio: da lì si esce sul fondovalle in un
+          minuto, senza il traffico del centro di Rovereto.</p>
+      </div>
+      <div class="riquadro">
+        <h3>Il patto, in tre righe</h3>
+        <p>Il prezzo te lo diciamo prima. Il tempo che ti diciamo è quello vero. Il veicolo
+          va dove dici tu.</p>
+        <p>Se una di queste tre cose non torna, hai sbagliato numero — e non è il nostro.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="scura bordata" id="domande">
+    <div class="wrap">
+      <h2 class="titolo">Domande frequenti</h2>
+      <div class="domande-griglia">
+      <div class="faq">
+        <details>
+          <summary>Siete davvero attivi di notte?</summary>
+          <div class="risposta"><p>Sì: 24 ore su 24, sette giorni su sette, festivi compresi.
+            Il numero è sempre lo stesso, <a href="tel:+393889550746">388 955 0746</a>, e di
+            notte squilla esattamente come di giorno.</p></div>
+        </details>
+        <details>
+          <summary>Sono fermo in autostrada, potete venire?</summary>
+          <div class="risposta"><p>In autostrada no — e non è una nostra scelta: sulla rete
+            autostradale possono intervenire solo i soccorritori autorizzati dal gestore. Si
+            chiama dalla colonnina SOS nella piazzola di emergenza, oppure dai numeri
+            autorizzati (ACI 803 116, AXA Assistance 800 111 911).</p>
+            <p>Appena il veicolo è fuori dall'autostrada, invece, ce ne occupiamo noi: se ti
+            hanno lasciato l'auto in un'area di servizio o al casello, chiamaci pure.</p></div>
+        </details>
+        <details>
+          <summary>Quanto ci mettete ad arrivare?</summary>
+          <div class="risposta"><p>Dipende da dove siamo in quel momento e dal traffico, quindi
+            un numero valido per tutti non esiste. Al telefono ti diamo un tempo vero: da Villa
+            Lagarina il fondovalle è a un minuto e Rovereto a cinque.</p></div>
+        </details>
+        <details>
+          <summary>Posso scegliere io l'officina dove portate l'auto?</summary>
+          <div class="risposta"><p>Sì, sempre. Il veicolo va dove dici tu: la tua officina di
+            fiducia, la carrozzeria, il concessionario o casa tua. Non abbiamo un'officina
+            nostra da riempire.</p></div>
+        </details>
+        <details>
+          <summary>Come faccio a dirvi dove sono se non conosco la strada?</summary>
+          <div class="risposta"><p>Usa il pulsante <b>Mandami la posizione</b> in cima alla
+            pagina: il telefono legge le coordinate e apre WhatsApp con il punto sulla mappa
+            già scritto dentro. Un tap, e sappiamo esattamente dove sei.</p>
+            <p>Se preferisci il telefono, ci basta un cartello, un incrocio, il chilometro
+            della statale o il nome dell'ultimo paese che hai passato.</p></div>
+        </details>
+        <details>
+          <summary>Ho l'assistenza compresa nell'assicurazione: chiamo voi o loro?</summary>
+          <div class="risposta"><p>Se ce l'hai, di solito conviene attivarla: l'hai già pagata
+            con la polizza. Chiamaci se non sai se ce l'hai, se ti hanno dato tempi lunghi, o
+            se il traino coperto non arriva fin dove ti serve.</p></div>
+        </details>
+        <details>
+          <summary>Trainate anche moto e furgoni?</summary>
+          <div class="risposta"><p>Sì, moto, scooter e veicoli commerciali leggeri. Dicci il
+            modello quando chiami: serve a capire quale attrezzatura portare.</p></div>
+        </details>
+      </div>
+      <div class="riquadro">
+        <h3>Non c'è la tua domanda?</h3>
+        <p>Falla al telefono: ci vuole meno che leggerla. Rispondiamo anche solo per dirti
+          se serve il carro attrezzi o se si risolve da solo.</p>
+        <a class="btn btn-primo" href="tel:+393889550746">Chiama ora</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="bordata contatti" id="contatti">
+    <div class="wrap contatti-griglia">
+      <div>
+        <h2 class="titolo">Contatti</h2>
+        <address class="nap">
+          <span class="riga"><strong>Valeroad</strong> — soccorso stradale e carro attrezzi</span>
+          <span class="riga">Via Zandonai 105, 38060 Villa Lagarina (TN)</span>
+          <span class="riga"><a href="tel:+393889550746">388 955 0746</a> — telefono e WhatsApp</span>
+          <span class="riga">Attivo 24 ore su 24, 7 giorni su 7</span>
+        </address>
+        <div class="azioni">
+          <a class="btn btn-primo" href="tel:+393889550746">Chiama ora</a>
+          <a class="btn btn-secondo" href="https://wa.me/393889550746" rel="noopener">Scrivi su WhatsApp</a>
+        </div>
+      </div>
+      <div class="riquadro">
+        <h3>Prima di chiamare, se riesci</h3>
+        <p>Tieni a mente tre cose: <b>dove sei</b> (anche solo l'ultimo paese o un cartello),
+          <b>che veicolo è</b> (marca, modello, se è elettrico) e <b>cosa è successo</b>
+          (non parte, gomma, incidente, fuori strada).</p>
+        <p>Con queste tre risposte la chiamata dura un minuto e il mezzo giusto parte subito.
+          Se non le hai, chiama lo stesso: le troviamo insieme.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="anno">2026</span> Valeroad — Via Zandonai 105, 38060 Villa Lagarina (TN)</span>
+    <span>P.IVA da comunicare</span>
+    <span><a href="tel:+393889550746">388 955 0746</a></span>
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn btn-primo" href="tel:+393889550746">Chiama ora</a>
+  <a class="btn btn-secondo" href="https://wa.me/393889550746" rel="noopener">WhatsApp</a>
+</nav>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var anno=document.getElementById('anno'); if(anno) anno.textContent=new Date().getFullYear();
+
+  /* --- Mandami la posizione: apre WhatsApp con il punto già scritto --- */
+  var NUM='393889550746';
+  var bottone=document.getElementById('posizione');
+  var esito=document.getElementById('esito');
+  function apriWhatsApp(testo){ window.location.href='https://wa.me/'+NUM+'?text='+encodeURIComponent(testo); }
+  if(bottone){
+    bottone.addEventListener('click',function(){
+      var generico='Ciao, sono fermo con il veicolo e mi serve il carro attrezzi. Sono a ';
+      if(!navigator.geolocation){
+        esito.textContent='Questo telefono non condivide la posizione: scrivi tu dove sei.';
+        apriWhatsApp(generico); return;
+      }
+      bottone.disabled=true;
+      esito.textContent='Sto leggendo la posizione…';
+      navigator.geolocation.getCurrentPosition(function(p){
+        var la=p.coords.latitude.toFixed(6), lo=p.coords.longitude.toFixed(6);
+        bottone.disabled=false; esito.textContent='Posizione trovata, apro WhatsApp.';
+        apriWhatsApp('Ciao, sono fermo con il veicolo e mi serve il carro attrezzi. Questa è la mia posizione: https://www.google.com/maps?q='+la+','+lo);
+      },function(){
+        bottone.disabled=false;
+        esito.textContent='Non sono riuscito a leggere la posizione: scrivi tu dove sei, o chiama.';
+        apriWhatsApp(generico);
+      },{enableHighAccuracy:true,timeout:8000,maximumAge:60000});
+    });
+  }
+
+  /* --- La mappa si disegna quando entra nello schermo (senza JS è già disegnata) --- */
+  var mappa=document.getElementById('mappa-disegno');
+  var fermo=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(mappa && !fermo && 'IntersectionObserver' in window){
+    var linee=mappa.querySelectorAll('path'), segni=mappa.querySelectorAll('g');
+    for(var i=0;i<linee.length;i++){
+      var l=linee[i].getTotalLength();
+      linee[i].style.strokeDasharray=l; linee[i].style.strokeDashoffset=l;
+    }
+    for(var j=0;j<segni.length;j++){ segni[j].style.opacity=0; }
+    var oss=new IntersectionObserver(function(voci){
+      voci.forEach(function(v){
+        if(!v.isIntersecting) return;
+        for(var i=0;i<linee.length;i++){
+          linee[i].style.transition='stroke-dashoffset .9s cubic-bezier(.25,1,.5,1)';
+          linee[i].style.strokeDashoffset=0;
+        }
+        for(var j=0;j<segni.length;j++){
+          segni[j].style.transition='opacity .4s ease '+(180+j*38)+'ms';
+          segni[j].style.opacity=1;
+        }
+        oss.unobserve(v.target);
+      });
+    },{threshold:.2});
+    oss.observe(mappa);
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":["AutomotiveBusiness","EmergencyService"],
+      "@id":"https://www.valeroad.it/#attivita",
+      "name":"Valeroad",
+      "alternateName":"Valeroad soccorso stradale",
+      "description":"Soccorso stradale e carro attrezzi 24 ore su 24 a Rovereto e in tutta la Vallagarina. Traino, recupero dopo incidente, avviamento batteria, foratura, apertura auto.",
+      "url":"https://www.valeroad.it/",
+      "image":"https://www.valeroad.it/assets/og.jpg",
+      "telephone":"+39 388 955 0746",
+      "areaServed":[
+        {"@type":"City","name":"Rovereto"},
+        {"@type":"City","name":"Villa Lagarina"},
+        {"@type":"City","name":"Isera"},
+        {"@type":"City","name":"Nogaredo"},
+        {"@type":"City","name":"Pomarolo"},
+        {"@type":"City","name":"Nomi"},
+        {"@type":"City","name":"Volano"},
+        {"@type":"City","name":"Calliano"},
+        {"@type":"City","name":"Besenello"},
+        {"@type":"City","name":"Mori"},
+        {"@type":"City","name":"Ala"},
+        {"@type":"City","name":"Avio"},
+        {"@type":"City","name":"Brentonico"},
+        {"@type":"City","name":"Ronzo-Chienis"},
+        {"@type":"City","name":"Trambileno"},
+        {"@type":"City","name":"Vallarsa"},
+        {"@type":"City","name":"Terragnolo"},
+        {"@type":"AdministrativeArea","name":"Vallagarina"}
+      ],
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"Via Zandonai 105",
+        "addressLocality":"Villa Lagarina",
+        "addressRegion":"TN",
+        "postalCode":"38060",
+        "addressCountry":"IT"
+      },
+      "openingHoursSpecification":[{
+        "@type":"OpeningHoursSpecification",
+        "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens":"00:00","closes":"23:59"
+      }],
+      "availableLanguage":"it",
+      "hasOfferCatalog":{
+        "@type":"OfferCatalog",
+        "name":"Interventi di soccorso stradale",
+        "itemListElement":[
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Traino e trasporto del veicolo"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Soccorso e recupero dopo incidente"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Avviamento d'emergenza e batteria"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sostituzione ruota per foratura"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Apertura auto con chiavi chiuse dentro"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Recupero veicolo fuori strada"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Trasporto moto e veicoli commerciali leggeri"}}
+        ]
+      }
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://www.valeroad.it/#sito",
+      "url":"https://www.valeroad.it/",
+      "name":"Valeroad — soccorso stradale Rovereto e Vallagarina",
+      "inLanguage":"it-IT",
+      "publisher":{"@id":"https://www.valeroad.it/#attivita"}
+    },
+    {
+      "@type":"FAQPage",
+      "@id":"https://www.valeroad.it/#domande",
+      "mainEntity":[
+        {"@type":"Question","name":"Siete davvero attivi di notte?","acceptedAnswer":{"@type":"Answer","text":"Sì: 24 ore su 24, sette giorni su sette, festivi compresi. Il numero è sempre lo stesso, 388 955 0746, e di notte squilla esattamente come di giorno."}},
+        {"@type":"Question","name":"Sono fermo in autostrada, potete venire?","acceptedAnswer":{"@type":"Answer","text":"In autostrada no: sulla rete autostradale possono intervenire solo i soccorritori autorizzati dal gestore. Si chiama dalla colonnina SOS nella piazzola di emergenza oppure dai numeri autorizzati (ACI 803 116, AXA Assistance 800 111 911). Appena il veicolo è fuori dall'autostrada ce ne occupiamo noi."}},
+        {"@type":"Question","name":"Quanto ci mettete ad arrivare?","acceptedAnswer":{"@type":"Answer","text":"Dipende da dove siamo in quel momento e dal traffico. Al telefono diamo un tempo di arrivo vero: dalla base di Villa Lagarina il fondovalle è a un minuto e Rovereto a cinque."}},
+        {"@type":"Question","name":"Posso scegliere io l'officina dove portate l'auto?","acceptedAnswer":{"@type":"Answer","text":"Sì, sempre. Il veicolo va dove decide il cliente: la sua officina di fiducia, la carrozzeria, il concessionario o casa. Valeroad non ha un'officina propria."}},
+        {"@type":"Question","name":"Come faccio a dirvi dove sono se non conosco la strada?","acceptedAnswer":{"@type":"Answer","text":"Con il pulsante Mandami la posizione sul sito: il telefono legge le coordinate e apre WhatsApp con il punto sulla mappa già scritto. In alternativa al telefono basta un cartello, un incrocio, il chilometro della statale o l'ultimo paese superato."}},
+        {"@type":"Question","name":"Ho l'assistenza compresa nell'assicurazione: chiamo voi o loro?","acceptedAnswer":{"@type":"Answer","text":"Se l'assistenza è compresa nella polizza o nella tessera ACI di solito conviene attivarla, perché è già pagata. Conviene chiamare Valeroad se non si sa di averla, se i tempi indicati sono lunghi o se il traino coperto non arriva fin dove serve."}},
+        {"@type":"Question","name":"Trainate anche moto e furgoni?","acceptedAnswer":{"@type":"Answer","text":"Sì: moto, scooter e veicoli commerciali leggeri. Conviene dire il modello quando si chiama, per capire quale attrezzatura portare."}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
