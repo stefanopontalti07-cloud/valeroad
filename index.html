@@ -139,6 +139,29 @@ section[id]{scroll-margin-top:76px}
 .titolo{font-size:clamp(1.95rem,4.6vw,3.1rem);margin-bottom:18px}
 .introduzione{color:var(--ink-soft);font-size:1.06rem;max-width:62ch;margin-bottom:clamp(34px,4vw,54px)}
 
+/* foto */
+.fascia-foto{margin:0;padding:0}
+.fascia-foto img{display:block;width:100%;max-width:1600px;margin-inline:auto;
+  height:clamp(220px,32vw,400px);object-fit:cover;object-position:center 58%}
+.fascia-foto figcaption{max-width:1120px;margin:14px auto 0;padding:0 20px;
+  font-size:14px;color:var(--ink-soft)}
+.galleria{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(16px,2.4vw,28px);
+  align-items:start}
+.galleria figure{margin:0}
+.galleria img{display:block;width:100%;height:auto;object-fit:cover;border-radius:3px;
+  aspect-ratio:16/9;background:var(--asfalto-2)}
+.galleria figcaption{margin-top:11px;font-size:14px;color:var(--ink-soft);line-height:1.5}
+.g-larga{grid-column:span 8}
+.g-alta{grid-column:span 4}
+.g-alta img{aspect-ratio:3/2}
+.g-media{grid-column:span 5}
+.g-resto{grid-column:span 7}
+@media(max-width:820px){
+  .galleria{grid-template-columns:1fr;gap:26px}
+  .galleria figure{grid-column:auto!important}
+  .galleria img{aspect-ratio:16/10}
+}
+
 /* interventi: lista, non griglia di card */
 .interventi{list-style:none;margin:0;padding:0;border-top:1px solid var(--asfalto-3)}
 .interventi li{border-bottom:1px solid var(--asfalto-3);padding:26px 0;
@@ -317,6 +340,12 @@ footer a:hover{color:var(--ambra)}
     </div>
   </section>
 
+  <figure class="fascia-foto">
+    <img src="assets/foto/camper-notte.webp" width="1066" height="501" loading="lazy" decoding="async"
+         alt="Il carro attrezzi di Valeroad carica un camper di notte, sull'asfalto bagnato di una statale della Vallagarina">
+    <figcaption>Un camper caricato di notte, sotto la pioggia. È il lavoro vero, non una foto in posa.</figcaption>
+  </figure>
+
   <section class="scura bordata" id="interventi">
     <div class="wrap">
       <h2 class="titolo">Cosa facciamo</h2>
@@ -353,6 +382,11 @@ footer a:hover{color:var(--ambra)}
              rimette in carreggiata.</p>
         </li>
         <li>
+          <h3>Camper e mezzi grandi</h3>
+          <p>Il pianale regge anche un camper o un furgone lungo. Dicci l'ingombro quando
+             chiami, così arriviamo con l'attrezzatura giusta al primo giro.</p>
+        </li>
+        <li>
           <h3>Moto e furgoni</h3>
           <p>Trasporto di moto, scooter e veicoli commerciali leggeri. Quando chiami dicci
              il modello: serve a sapere quale attrezzatura caricare.</p>
@@ -363,6 +397,37 @@ footer a:hover{color:var(--ambra)}
              arriviamo già attrezzati.</p>
         </li>
       </ul>
+    </div>
+  </section>
+
+  <section class="bordata" id="mezzo">
+    <div class="wrap">
+      <h2 class="titolo">Il mezzo</h2>
+      <p class="introduzione">Un pianale scorrevole a doppio piano, con rimorchio. In pratica:
+        quasi tutto quello che sta su quattro ruote, e spesso due cose in un viaggio solo.</p>
+      <div class="galleria">
+        <figure class="g-larga">
+          <img src="assets/foto/porsche-moto.jpg" width="1200" height="540" loading="lazy" decoding="async"
+               alt="Una Porsche 911 cabrio e una moto caricate insieme sul pianale del carro attrezzi">
+          <figcaption>Un'auto di valore e una moto sullo stesso pianale. Le moto si legano a
+            parte, non si trainano.</figcaption>
+        </figure>
+        <figure class="g-alta">
+          <img src="assets/foto/due-auto.webp" width="1100" height="669" loading="lazy" decoding="async"
+               alt="Due auto caricate una sopra l'altra sul pianale a doppio piano">
+          <figcaption>Due auto, un viaggio. Il piano superiore si alza e si carica sotto.</figcaption>
+        </figure>
+        <figure class="g-media">
+          <img src="assets/foto/due-mezzi.jpg" width="1070" height="456" loading="lazy" decoding="async"
+               alt="Un autocarro sul pianale e un furgone sul rimorchio: due mezzi trasportati insieme">
+          <figcaption>Con il rimorchio si arriva a due mezzi pesanti insieme.</figcaption>
+        </figure>
+        <figure class="g-resto">
+          <img src="assets/foto/concessionario.jpg" width="1080" height="453" loading="lazy" decoding="async"
+               alt="Il carro attrezzi carica due auto su due piani davanti a un concessionario">
+          <figcaption>Anche ritiri e consegne programmate, non solo emergenze.</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
@@ -742,7 +807,8 @@ footer a:hover{color:var(--ambra)}
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sostituzione ruota per foratura"}},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Apertura auto con chiavi chiuse dentro"}},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Recupero veicolo fuori strada"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Trasporto moto e veicoli commerciali leggeri"}}
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Trasporto moto e veicoli commerciali leggeri"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Trasporto di camper e mezzi lunghi su pianale"}}
         ]
       }
     },
