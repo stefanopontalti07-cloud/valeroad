@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Soccorso stradale a Rovereto 24h | Valeroad carro attrezzi</title>
-<meta name="description" content="Carro attrezzi 24 ore su 24 a Rovereto e in Vallagarina: traino, incidenti, batteria, foratura, recupero. Chiama il 388 955 0746, risponde Marcello.">
+<title>Soccorso stradale a Rovereto e trasporto veicoli | Valeroad</title>
+<meta name="description" content="Carro attrezzi a Rovereto e in Vallagarina: traino, incidenti, recupero. Trasporto veicoli fino a 35 t in Italia e in Europa. Chiama il 388 955 0746.">
 <link rel="canonical" href="https://www.valeroad.it/">
 <meta name="theme-color" content="#14181B">
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Valeroad">
-<meta property="og:title" content="Soccorso stradale Rovereto e Vallagarina, 24 ore su 24">
-<meta property="og:description" content="Carro attrezzi da Villa Lagarina, in mezzo alla valle. Traino, incidenti, batteria, foratura. Chiama il 388 955 0746.">
+<meta property="og:title" content="Soccorso stradale a Rovereto e trasporto veicoli in Europa">
+<meta property="og:description" content="Carro attrezzi da Villa Lagarina. Traino, incidenti, recupero, e trasporto di auto, moto, camper e camion fino a 35 t in Italia e in Europa. Chiama il 388 955 0746.">
 <meta property="og:url" content="https://www.valeroad.it/">
 <meta property="og:image" content="https://www.valeroad.it/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Valeroad, soccorso stradale a Rovereto e in Vallagarina 24 ore su 24. Telefono 388 955 0746.">
+<meta property="og:image:alt" content="Valeroad, soccorso stradale a Rovereto e in Vallagarina e trasporto veicoli in Italia e in Europa. Telefono 388 955 0746.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -127,9 +127,6 @@ a[href^="tel:"]:not(.btn){padding-block:.8em}
 .pannello dt{font-size:13px;letter-spacing:.04em;color:var(--ink-soft);text-transform:uppercase;
   font-weight:600;white-space:nowrap}
 .pannello dd{margin:0;grid-column:2;font-weight:500;line-height:1.45}
-.pannello .acceso{color:var(--ambra);font-weight:600}
-.pannello .acceso::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;
-  background:var(--ambra);margin-right:9px;vertical-align:baseline}
 
 /* ---------- sezioni ---------- */
 section{padding:var(--sez) 0}
@@ -138,6 +135,29 @@ section[id]{scroll-margin-top:76px}
 .scura{background:var(--asfalto-2)}
 .titolo{font-size:clamp(1.95rem,4.6vw,3.1rem);margin-bottom:18px}
 .introduzione{color:var(--ink-soft);font-size:1.06rem;max-width:62ch;margin-bottom:clamp(34px,4vw,54px)}
+
+/* foto */
+.fascia-foto{margin:0;padding:0}
+.fascia-foto img{display:block;width:100%;max-width:1600px;margin-inline:auto;
+  height:clamp(220px,32vw,400px);object-fit:cover;object-position:center 58%}
+.fascia-foto figcaption{max-width:1120px;margin:14px auto 0;padding:0 20px;
+  font-size:14px;color:var(--ink-soft)}
+.galleria{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(16px,2.4vw,28px);
+  align-items:start}
+.galleria figure{margin:0}
+.galleria img{display:block;width:100%;height:auto;object-fit:cover;border-radius:3px;
+  aspect-ratio:16/9;background:var(--asfalto-2)}
+.galleria figcaption{margin-top:11px;font-size:14px;color:var(--ink-soft);line-height:1.5}
+.g-larga{grid-column:span 8}
+.g-alta{grid-column:span 4}
+.g-alta img{aspect-ratio:3/2}
+.g-media{grid-column:span 5}
+.g-resto{grid-column:span 7}
+@media(max-width:820px){
+  .galleria{grid-template-columns:1fr;gap:26px}
+  .galleria figure{grid-column:auto!important}
+  .galleria img{aspect-ratio:16/10}
+}
 
 /* interventi: lista, non griglia di card */
 .interventi{list-style:none;margin:0;padding:0;border-top:1px solid var(--asfalto-3)}
@@ -261,7 +281,7 @@ footer a:hover{color:var(--ambra)}
 
 <header class="testata">
   <div class="wrap">
-    <a class="marchio" href="#contenuto"><span class="nome">Vale<i>road</i></span><span class="tag">soccorso stradale · Vallagarina</span></a>
+    <a class="marchio" href="#contenuto"><span class="nome">Vale<i>road</i></span><span class="tag">soccorso stradale e trasporti · Vallagarina</span></a>
     <div class="testata-fine">
       <a class="tel-testo" href="tel:+393889550746">388 955 0746</a>
       <a class="btn btn-primo" href="tel:+393889550746">Chiama ora</a>
@@ -274,9 +294,10 @@ footer a:hover{color:var(--ambra)}
   <section class="hero">
     <div class="wrap hero-griglia">
       <div>
-        <h1>Soccorso stradale a Rovereto e in Vallagarina, <em>24 ore su 24</em></h1>
+        <h1>Soccorso stradale a Rovereto e trasporto veicoli <em>in tutta Europa</em></h1>
         <p class="hero-sotto">Sei fermo? Chiama: risponde <b>Marcello</b>, cioè chi guida il carro
-          attrezzi. Nessun centralino in mezzo. La base è a <b>Villa Lagarina</b>, in mezzo alla valle.</p>
+          attrezzi. Nessun centralino in mezzo. Lavoriamo per <b>privati e aziende</b>, dalla base
+          di <b>Villa Lagarina</b>, in mezzo alla valle.</p>
         <div class="azioni">
           <a class="btn btn-primo" href="tel:+393889550746">
             <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
@@ -290,32 +311,43 @@ footer a:hover{color:var(--ambra)}
         <p class="esito" id="esito" role="status" aria-live="polite"></p>
         <p class="riga-tel">
           <a class="tel-testo" href="tel:+393889550746">388 955 0746</a>
-          <small>telefono e WhatsApp · notte, weekend e festivi compresi</small>
+          <small>telefono e WhatsApp · risponde Marcello</small>
         </p>
       </div>
 
       <div class="pannello">
         <dl>
           <div>
-            <dt>Adesso</dt>
-            <dd class="acceso">Attivo — il telefono è acceso</dd>
+            <dt>Quando</dt>
+            <dd>Se siamo liberi partiamo subito. Se non lo siamo te lo diciamo al telefono e
+              concordiamo il giorno del ritiro</dd>
           </div>
           <div>
             <dt>Base</dt>
             <dd>Villa Lagarina, cinque minuti da Rovereto e a metà della Vallagarina</dd>
           </div>
           <div>
-            <dt>Preventivo</dt>
-            <dd>Te lo diciamo al telefono, prima di partire. Nessuna sorpresa all'arrivo</dd>
+            <dt>Cosa carichiamo</dt>
+            <dd>Auto, moto, furgoni, camper, camion e rimorchi — fino a 35 tonnellate</dd>
           </div>
           <div>
-            <dt>Il veicolo</dt>
-            <dd>Lo portiamo dove dici tu: la tua officina, la carrozzeria, casa</dd>
+            <dt>Fin dove</dt>
+            <dd>In Vallagarina per il soccorso; per i trasporti tutta l'Italia e l'Unione Europea</dd>
+          </div>
+          <div>
+            <dt>Preventivo</dt>
+            <dd>Te lo diciamo al telefono, prima di partire. Nessuna sorpresa all'arrivo</dd>
           </div>
         </dl>
       </div>
     </div>
   </section>
+
+  <figure class="fascia-foto">
+    <img src="assets/foto/camper-notte.webp" width="1066" height="501" loading="lazy" decoding="async"
+         alt="Il carro attrezzi di Valeroad carica un camper di notte, sull'asfalto bagnato di una statale della Vallagarina">
+    <figcaption>Un camper caricato di notte, sotto la pioggia. È il lavoro vero, non una foto in posa.</figcaption>
+  </figure>
 
   <section class="scura bordata" id="interventi">
     <div class="wrap">
@@ -325,7 +357,14 @@ footer a:hover{color:var(--ambra)}
         <li>
           <h3>Traino e trasporto</h3>
           <p>Il veicolo va dove decidi tu: la tua officina di fiducia, la carrozzeria, casa tua.
-             Non abbiamo un'officina da riempire, quindi non abbiamo motivo di portartelo altrove.</p>
+             Non abbiamo un'officina da riempire, quindi non abbiamo motivo di portartelo altrove.
+             Lavoriamo per privati e per aziende.</p>
+        </li>
+        <li>
+          <h3>Trasporti in Italia e in Europa</h3>
+          <p>Non solo emergenze: il veicolo lo portiamo anche lontano, in tutta Italia e nei paesi
+             dell'Unione Europea. Un'auto comprata in un'altra regione, un mezzo da consegnare a un
+             cliente, la macchina rimasta ferma in vacanza all'estero.</p>
         </li>
         <li>
           <h3>Dopo un incidente</h3>
@@ -353,9 +392,16 @@ footer a:hover{color:var(--ambra)}
              rimette in carreggiata.</p>
         </li>
         <li>
-          <h3>Moto e furgoni</h3>
-          <p>Trasporto di moto, scooter e veicoli commerciali leggeri. Quando chiami dicci
-             il modello: serve a sapere quale attrezzatura caricare.</p>
+          <h3>Camper, camion e mezzi pesanti</h3>
+          <p>Autocaravan, camion, furgoni lunghi, rimorchi: con il pianale a doppio piano e il
+             rimorchio si arriva <b>fino a 35 tonnellate</b>. Dicci ingombro e peso quando chiami,
+             così arriviamo con l'attrezzatura giusta al primo giro.</p>
+        </li>
+        <li>
+          <h3>Moto, auto e rimorchi</h3>
+          <p>Moto, scooter, auto di ogni tipo, veicoli commerciali e rimorchi. Le moto si legano
+             a parte, non si trainano. Quando chiami dicci il modello: serve a sapere quale
+             attrezzatura caricare.</p>
         </li>
         <li>
           <h3>Elettriche e ibride</h3>
@@ -363,6 +409,38 @@ footer a:hover{color:var(--ambra)}
              arriviamo già attrezzati.</p>
         </li>
       </ul>
+    </div>
+  </section>
+
+  <section class="bordata" id="mezzo">
+    <div class="wrap">
+      <h2 class="titolo">Il mezzo</h2>
+      <p class="introduzione">Un pianale scorrevole a doppio piano, con rimorchio: si arriva
+        fino a 35 tonnellate. In pratica auto, moto, furgoni, camper e camion — e spesso due mezzi
+        in un viaggio solo.</p>
+      <div class="galleria">
+        <figure class="g-larga">
+          <img src="assets/foto/porsche-moto.jpg" width="1200" height="540" loading="lazy" decoding="async"
+               alt="Una Porsche 911 cabrio e una moto caricate insieme sul pianale del carro attrezzi">
+          <figcaption>Un'auto di valore e una moto sullo stesso pianale. Le moto si legano a
+            parte, non si trainano.</figcaption>
+        </figure>
+        <figure class="g-alta">
+          <img src="assets/foto/due-auto.webp" width="1100" height="669" loading="lazy" decoding="async"
+               alt="Due auto caricate una sopra l'altra sul pianale a doppio piano">
+          <figcaption>Due auto, un viaggio. Il piano superiore si alza e si carica sotto.</figcaption>
+        </figure>
+        <figure class="g-media">
+          <img src="assets/foto/due-mezzi.jpg" width="1070" height="456" loading="lazy" decoding="async"
+               alt="Un autocarro sul pianale e un furgone sul rimorchio: due mezzi trasportati insieme">
+          <figcaption>Con il rimorchio si arriva a due mezzi pesanti insieme.</figcaption>
+        </figure>
+        <figure class="g-resto">
+          <img src="assets/foto/concessionario.jpg" width="1080" height="453" loading="lazy" decoding="async"
+               alt="Il carro attrezzi carica due auto su due piani davanti a un concessionario">
+          <figcaption>Anche ritiri e consegne programmate, non solo emergenze.</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
@@ -383,6 +461,9 @@ footer a:hover{color:var(--ambra)}
           <b>Ti diciamo quanto e quando</b>
           <p>Un tempo di arrivo vero e il prezzo, prima di muoverci. Preferiamo dirti venti
              minuti e arrivare in venti, che dirtene cinque e farti aspettare al freddo.</p>
+          <p>E se in quel momento non siamo liberi te lo diciamo subito, invece di farti
+             aspettare per niente: il mezzo lo lasci dov'è in sicurezza e concordiamo il giorno
+             in cui passiamo a prenderlo.</p>
         </li>
         <li>
           <span class="num">3 di 3</span>
@@ -417,6 +498,10 @@ footer a:hover{color:var(--ambra)}
           <p>Copriamo tutta la Vallagarina: il fondovalle sulla SS12 e le valli laterali —
             Vallarsa, Terragnolo, Trambileno, la Val di Gresta, l'altopiano di Brentonico.
             Saliamo anche verso Folgaria e scendiamo verso Nago-Torbole e l'alto Garda.</p>
+          <p><b>Per i trasporti il raggio è un altro.</b> Un veicolo da caricare e portare
+            altrove lo portiamo in tutta Italia e nei paesi dell'Unione Europea. Il soccorso sulla
+            strada resta invece qui, in Vallagarina e dintorni — e in autostrada non interveniamo,
+            vedi le domande frequenti.</p>
           <p class="fuori">Sei appena fuori da questo elenco? Chiama lo stesso: se possiamo
             arrivare, arriviamo, e se non possiamo ti diciamo subito chi chiamare invece
             di farti perdere tempo.</p>
@@ -486,8 +571,10 @@ footer a:hover{color:var(--ambra)}
       <div class="costo-griglia">
         <div class="riquadro">
           <h3>Da cosa dipende</h3>
-          <p>Da tre cose soltanto: da dove sei, da dove va portato il veicolo, e se è notte o
-            giorno festivo. Al telefono ci bastano trenta secondi per dirti la cifra.</p>
+          <p>Da tre cose soltanto: da dove sei, da dove va portato il veicolo e quando serve.
+            Al telefono ci bastano trenta secondi per dirti la cifra.</p>
+          <p>Per un trasporto lungo — un'altra regione, un altro paese — il conto si fa sui
+            chilometri e sul mezzo: dicci partenza, arrivo e che veicolo è.</p>
           <p>Non troverai un prezzo civetta su questa pagina. Chi scrive «da 49 euro» in
             grande, poi all'arrivo te ne chiede altri: preferiamo dirti la cifra vera subito.</p>
         </div>
@@ -509,6 +596,9 @@ footer a:hover{color:var(--ambra)}
         <p>Valeroad è Marcello. Quando chiami parli con la persona che poi guida il mezzo:
           non c'è un call center che smista la chiamata al primo carro attrezzi libero, e non
           c'è un'app che gira la richiesta a qualcuno che non è di qui.</p>
+        <p>Lavoriamo sia per <b>privati</b> sia per <b>aziende</b>: concessionari, officine,
+          carrozzerie, imprese con mezzi propri. Cambia il mezzo da caricare, non il modo di
+          lavorare.</p>
         <p>La sede è in via Zandonai 105 a Villa Lagarina, nella zona artigianale sulla destra
           Adige. È un vantaggio pratico, non un dettaglio: da lì si esce sul fondovalle in un
           minuto, senza il traffico del centro di Rovereto.</p>
@@ -528,10 +618,13 @@ footer a:hover{color:var(--ambra)}
       <div class="domande-griglia">
       <div class="faq">
         <details>
-          <summary>Siete davvero attivi di notte?</summary>
-          <div class="risposta"><p>Sì: 24 ore su 24, sette giorni su sette, festivi compresi.
-            Il numero è sempre lo stesso, <a href="tel:+393889550746">388 955 0746</a>, e di
-            notte squilla esattamente come di giorno.</p></div>
+          <summary>A che ora posso chiamare?</summary>
+          <div class="risposta"><p>Chiama pure e te lo diciamo subito: <b>non siamo un servizio
+            attivo 24 ore su 24</b>, e preferiamo scriverlo qui piuttosto che farti squillare il
+            telefono a vuoto quando hai bisogno. Se siamo liberi partiamo, se non lo siamo te lo
+            diciamo in quel momento.</p>
+            <p>E se non è un'emergenza non serve aspettare nessuno: il mezzo lo lasci in un posto
+            sicuro e concordiamo insieme il giorno in cui passiamo a prenderlo.</p></div>
         </details>
         <details>
           <summary>Sono fermo in autostrada, potete venire?</summary>
@@ -541,6 +634,29 @@ footer a:hover{color:var(--ambra)}
             autorizzati (ACI 803 116, AXA Assistance 800 111 911).</p>
             <p>Appena il veicolo è fuori dall'autostrada, invece, ce ne occupiamo noi: se ti
             hanno lasciato l'auto in un'area di servizio o al casello, chiamaci pure.</p></div>
+        </details>
+        <details>
+          <summary>Che mezzi caricate, e fino a che peso?</summary>
+          <div class="risposta"><p>Auto, moto e scooter, furgoni, camper e autocaravan, camion e
+            rimorchi: <b>fino a 35 tonnellate</b>. Il pianale è scorrevole a doppio piano e c'è il
+            rimorchio, quindi spesso due mezzi partono in un viaggio solo.</p>
+            <p>Quando chiami dicci che veicolo è e quanto pesa: serve a sapere quale attrezzatura
+            caricare e a darti la cifra giusta al telefono.</p></div>
+        </details>
+        <details>
+          <summary>Portate i veicoli anche fuori dall'Italia?</summary>
+          <div class="risposta"><p>Sì. Il soccorso sulla strada lo facciamo qui in Vallagarina, ma
+            i <b>trasporti</b> li facciamo in tutta Italia e nei paesi dell'<b>Unione Europea</b>:
+            un'auto comprata lontano, un mezzo da consegnare a un cliente, la macchina rimasta
+            ferma in vacanza all'estero.</p>
+            <p>Dicci partenza, arrivo e che veicolo è: il preventivo te lo diamo prima di
+            partire, come per tutto il resto.</p></div>
+        </details>
+        <details>
+          <summary>Lavorate anche con le aziende?</summary>
+          <div class="risposta"><p>Sì: concessionari, officine, carrozzerie, imprese con mezzi
+            propri. Per i ritiri che non sono urgenti si concorda il giorno e si passa a
+            prendere il mezzo, senza trattare ogni spostamento come un'emergenza.</p></div>
         </details>
         <details>
           <summary>Quanto ci mettete ad arrivare?</summary>
@@ -568,11 +684,6 @@ footer a:hover{color:var(--ambra)}
             con la polizza. Chiamaci se non sai se ce l'hai, se ti hanno dato tempi lunghi, o
             se il traino coperto non arriva fin dove ti serve.</p></div>
         </details>
-        <details>
-          <summary>Trainate anche moto e furgoni?</summary>
-          <div class="risposta"><p>Sì, moto, scooter e veicoli commerciali leggeri. Dicci il
-            modello quando chiami: serve a capire quale attrezzatura portare.</p></div>
-        </details>
       </div>
       <div class="riquadro">
         <h3>Non c'è la tua domanda?</h3>
@@ -592,7 +703,7 @@ footer a:hover{color:var(--ambra)}
           <span class="riga"><strong>Valeroad</strong> — soccorso stradale e carro attrezzi</span>
           <span class="riga">Via Zandonai 105, 38060 Villa Lagarina (TN)</span>
           <span class="riga"><a href="tel:+393889550746">388 955 0746</a> — telefono e WhatsApp</span>
-          <span class="riga">Attivo 24 ore su 24, 7 giorni su 7</span>
+          <span class="riga">Soccorso in Vallagarina · trasporti in Italia e in Europa</span>
         </address>
         <div class="azioni">
           <a class="btn btn-primo" href="tel:+393889550746">Chiama ora</a>
@@ -694,7 +805,7 @@ footer a:hover{color:var(--ambra)}
       "@id":"https://www.valeroad.it/#attivita",
       "name":"Valeroad",
       "alternateName":"Valeroad soccorso stradale",
-      "description":"Soccorso stradale e carro attrezzi 24 ore su 24 a Rovereto e in tutta la Vallagarina. Traino, recupero dopo incidente, avviamento batteria, foratura, apertura auto.",
+      "description":"Soccorso stradale e carro attrezzi a Rovereto e in tutta la Vallagarina: traino, recupero dopo incidente, avviamento batteria, foratura, apertura auto. Trasporto di auto, moto, camper, camion e rimorchi fino a 35 tonnellate, in Italia e nei paesi dell'Unione Europea. Non si interviene in autostrada.",
       "url":"https://www.valeroad.it/",
       "image":"https://www.valeroad.it/assets/og.jpg",
       "telephone":"+39 388 955 0746",
@@ -716,7 +827,9 @@ footer a:hover{color:var(--ambra)}
         {"@type":"City","name":"Trambileno"},
         {"@type":"City","name":"Vallarsa"},
         {"@type":"City","name":"Terragnolo"},
-        {"@type":"AdministrativeArea","name":"Vallagarina"}
+        {"@type":"AdministrativeArea","name":"Vallagarina"},
+        {"@type":"Country","name":"Italia"},
+        {"@type":"Place","name":"Unione Europea"}
       ],
       "address":{
         "@type":"PostalAddress",
@@ -726,11 +839,6 @@ footer a:hover{color:var(--ambra)}
         "postalCode":"38060",
         "addressCountry":"IT"
       },
-      "openingHoursSpecification":[{
-        "@type":"OpeningHoursSpecification",
-        "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens":"00:00","closes":"23:59"
-      }],
       "availableLanguage":"it",
       "hasOfferCatalog":{
         "@type":"OfferCatalog",
@@ -742,7 +850,10 @@ footer a:hover{color:var(--ambra)}
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sostituzione ruota per foratura"}},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Apertura auto con chiavi chiuse dentro"}},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Recupero veicolo fuori strada"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Trasporto moto e veicoli commerciali leggeri"}}
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Trasporto di moto, scooter e veicoli commerciali"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Trasporto di camper, autocaravan, camion e rimorchi fino a 35 tonnellate"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Trasporto veicoli in Italia e nei paesi dell'Unione Europea"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Ritiro del veicolo in giorno concordato, per privati e aziende"}}
         ]
       }
     },
@@ -750,7 +861,7 @@ footer a:hover{color:var(--ambra)}
       "@type":"WebSite",
       "@id":"https://www.valeroad.it/#sito",
       "url":"https://www.valeroad.it/",
-      "name":"Valeroad — soccorso stradale Rovereto e Vallagarina",
+      "name":"Valeroad — soccorso stradale Rovereto e trasporto veicoli",
       "inLanguage":"it-IT",
       "publisher":{"@id":"https://www.valeroad.it/#attivita"}
     },
@@ -758,13 +869,15 @@ footer a:hover{color:var(--ambra)}
       "@type":"FAQPage",
       "@id":"https://www.valeroad.it/#domande",
       "mainEntity":[
-        {"@type":"Question","name":"Siete davvero attivi di notte?","acceptedAnswer":{"@type":"Answer","text":"Sì: 24 ore su 24, sette giorni su sette, festivi compresi. Il numero è sempre lo stesso, 388 955 0746, e di notte squilla esattamente come di giorno."}},
+        {"@type":"Question","name":"A che ora posso chiamare?","acceptedAnswer":{"@type":"Answer","text":"Valeroad non è un servizio attivo 24 ore su 24: conviene chiamare e chiedere. Se il mezzo è libero si parte, altrimenti lo si dice subito. Se non è un'emergenza il veicolo si può lasciare in un posto sicuro e si concorda il giorno del ritiro."}},
         {"@type":"Question","name":"Sono fermo in autostrada, potete venire?","acceptedAnswer":{"@type":"Answer","text":"In autostrada no: sulla rete autostradale possono intervenire solo i soccorritori autorizzati dal gestore. Si chiama dalla colonnina SOS nella piazzola di emergenza oppure dai numeri autorizzati (ACI 803 116, AXA Assistance 800 111 911). Appena il veicolo è fuori dall'autostrada ce ne occupiamo noi."}},
+        {"@type":"Question","name":"Che mezzi caricate, e fino a che peso?","acceptedAnswer":{"@type":"Answer","text":"Auto, moto e scooter, furgoni, camper e autocaravan, camion e rimorchi, fino a 35 tonnellate. Il pianale è scorrevole a doppio piano e c'è il rimorchio, quindi spesso due mezzi partono in un viaggio solo."}},
+        {"@type":"Question","name":"Portate i veicoli anche fuori dall'Italia?","acceptedAnswer":{"@type":"Answer","text":"Sì. Il soccorso stradale resta in Vallagarina, ma i trasporti si fanno in tutta Italia e nei paesi dell'Unione Europea: un'auto comprata lontano, un mezzo da consegnare a un cliente, la macchina rimasta ferma in vacanza all'estero. Il preventivo si dà prima di partire."}},
+        {"@type":"Question","name":"Lavorate anche con le aziende?","acceptedAnswer":{"@type":"Answer","text":"Sì: concessionari, officine, carrozzerie e imprese con mezzi propri, oltre ai privati. Per i ritiri non urgenti si concorda il giorno in cui passare a prendere il mezzo."}},
         {"@type":"Question","name":"Quanto ci mettete ad arrivare?","acceptedAnswer":{"@type":"Answer","text":"Dipende da dove siamo in quel momento e dal traffico. Al telefono diamo un tempo di arrivo vero: dalla base di Villa Lagarina il fondovalle è a un minuto e Rovereto a cinque."}},
         {"@type":"Question","name":"Posso scegliere io l'officina dove portate l'auto?","acceptedAnswer":{"@type":"Answer","text":"Sì, sempre. Il veicolo va dove decide il cliente: la sua officina di fiducia, la carrozzeria, il concessionario o casa. Valeroad non ha un'officina propria."}},
         {"@type":"Question","name":"Come faccio a dirvi dove sono se non conosco la strada?","acceptedAnswer":{"@type":"Answer","text":"Con il pulsante Mandami la posizione sul sito: il telefono legge le coordinate e apre WhatsApp con il punto sulla mappa già scritto. In alternativa al telefono basta un cartello, un incrocio, il chilometro della statale o l'ultimo paese superato."}},
-        {"@type":"Question","name":"Ho l'assistenza compresa nell'assicurazione: chiamo voi o loro?","acceptedAnswer":{"@type":"Answer","text":"Se l'assistenza è compresa nella polizza o nella tessera ACI di solito conviene attivarla, perché è già pagata. Conviene chiamare Valeroad se non si sa di averla, se i tempi indicati sono lunghi o se il traino coperto non arriva fin dove serve."}},
-        {"@type":"Question","name":"Trainate anche moto e furgoni?","acceptedAnswer":{"@type":"Answer","text":"Sì: moto, scooter e veicoli commerciali leggeri. Conviene dire il modello quando si chiama, per capire quale attrezzatura portare."}}
+        {"@type":"Question","name":"Ho l'assistenza compresa nell'assicurazione: chiamo voi o loro?","acceptedAnswer":{"@type":"Answer","text":"Se l'assistenza è compresa nella polizza o nella tessera ACI di solito conviene attivarla, perché è già pagata. Conviene chiamare Valeroad se non si sa di averla, se i tempi indicati sono lunghi o se il traino coperto non arriva fin dove serve."}}
       ]
     }
   ]
