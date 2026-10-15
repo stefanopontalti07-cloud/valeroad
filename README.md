@@ -1,7 +1,6 @@
 # Valeroad — sito
 
-Soccorso stradale e carro attrezzi a Rovereto e in Vallagarina, e trasporto
-veicoli fino a 35 t in Italia e in Europa.
+Soccorso stradale e trasporto veicoli in tutta Europa, da Villa Lagarina (TN).
 Villa Lagarina (TN) — 388 955 0746.
 
 Questa e' l'**anteprima** del sito, in attesa del dominio definitivo: e' servita
