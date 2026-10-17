@@ -3,7 +3,6 @@
 Soccorso stradale e trasporto veicoli in tutta Europa, da Villa Lagarina (TN).
 Villa Lagarina (TN) — 388 955 0746.
 
-Questa e' l'**anteprima** del sito, in attesa del dominio definitivo: e' servita
-con `noindex`, quindi non compare nei risultati di ricerca.
+Online su https://www.valeroad.it/ (GitHub Pages).
 
 Sito realizzato da Stefano Pontalti.

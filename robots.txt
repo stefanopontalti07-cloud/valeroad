@@ -1,3 +1,4 @@
-# Anteprima, non il sito vero: non va indicizzata.
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://www.valeroad.it/sitemap.xml
